@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+   version="2.5"
+   metadata-complete="true">
+  
+  <display-name>App</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <env-entry>
+    <env-entry-name>org.apache.el.parser.SKIP_IDENTIFIER_CHECK</env-entry-name>
+    <env-entry-type>java.lang.Boolean</env-entry-type>
+    <env-entry-value>true</env-entry-value>
+  </env-entry>
+
+  <context-param>
+    <param-name>org.eclipse.jetty.servlet.Default.useFileMappedBuffer</param-name>
+    <param-value>false</param-value>
+  </context-param>
+
+  
+</web-app>
